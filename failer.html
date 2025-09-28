@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title> fail</title>
+<style>
+.top{
+  display:grid;
+  grid-template-columns: 350px ;
+  row-gap:20px;
+  display:inline-block; 
+ 
+}
+.bottom{
+  display:grid;
+  grid-template-columns: 50px 230px;
+  column-gap: 30px;
+}
+
+.bottomtwo{
+  display:grid;
+  grid-template-columns: 50px 230px;
+  column-gap: 20px;
+}
+.name{
+  margin-bottom:0px;
+}
+.status{
+  margin-top: 8px;
+}
+.whole{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+@media ( max-width:870px) {
+  .whole{
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+ 
+@media ( min-width:1400px) {
+  .whole{
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+  }
+}
+
+
+.bottomthree{
+  display:grid;
+  grid-template-columns: 50px 200px;
+  column-gap: 30px;
+}
+.three{
+  display:grid;
+  width: 310px;
+  
+}
+.bottom-four{
+  display:grid;
+  grid-template-columns: 50px 230px ;
+  column-gap: 20px;
+}
+.second-large{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  column-gap: 30px;
+}
+.header{
+  display:flex;
+  flex-direction: row;
+  height:60px;
+  justify-content: space-between;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:65px;
+  background-color: white;
+  border-bottom-width:2px;
+  border-bottom-color:rgb(223, 223, 223);
+  border-bottom-style:solid;
+  z-index: 100;
+ 
+}
+.left-side{
+width:220px; 
+align-items: center;
+display:flex;
+}
+.icon-one{
+  height:30px;
+  margin-right:18px;
+  margin-left:15px;
+}
+.center-one{
+   display:flex;
+   flex:1; 
+   max-width: 650px;
+   align-items: center;
+}
+ .search-box{
+  height:28px;
+  border-color: grey;
+ }
+ .mic-button{
+  border-radius: 40px;
+  border:none;
+  width:40px;
+  height:40px;
+  margin-left: 20px;
+ }
+ .mic-img{
+  height:24px;
+  border-radius: 24px;
+ }
+ .box{
+  padding-left: 8px;
+  padding-right:200px;
+  height:40px;
+ border-width: 1px;
+  border-color: rgb(226, 218, 218);
+  max-width: 450px;
+  
+  
+ }
+ .search-button{
+  border-width: 1px;
+  margin-left: -1px;
+  border-color: rgb(226, 218, 218);
+  height:44px;
+  width:70px;
+  cursor: pointer;
+  position: relative;
+ }
+ .box::placeholder{
+  font-size: 16px;
+ }
+ .upload{
+ height:25px;
+ margin-right:20px;
+ margin-left:5px;
+ }
+ .apps{
+height:25px;
+margin-right: 20px;
+ }
+ .dragon{
+  height:35px;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 50px;
+  
+ 
+ }
+ .notification{
+  height:25px;
+  margin-right:20px;
+ }
+ .side-bar{
+  position:fixed;
+  background-color: white;
+  top:65px;
+  left:0;
+  bottom:0;
+  width:72px;
+ }
+ .bot{
+  font-size: 12px;
+  margin-left:6px;
+  margin-top: 0px;
+ }
+ .first{
+  position:absolute;
+  background-color: black;
+  color:white;
+  font-size: 14px;
+  font-family: arial;
+  bottom:15px;
+  right:15px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  border-radius:4px;
+
+
+ }
+ .first-2{
+  position:absolute;
+  background-color: black;
+  color:white;
+  font-size: 14px;
+  font-family: arial;
+  bottom:20px;
+  right:15px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  border-radius:4px;
+
+
+ }
+ .first-3{
+  position:absolute;
+  background-color: black;
+  color:white;
+  font-size: 14px;
+  font-family: arial;
+  bottom:20px;
+  right:15px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  border-radius:4px;
+
+
+ }
+ .first-5{
+  position:absolute;
+  background-color: black;
+  color:white;
+  font-size: 14px;
+  font-family: arial;
+  bottom:25px;
+  right:15px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  border-radius:4px;
+
+ }
+ .first-6{
+  position:absolute;
+  background-color: black;
+  color:white;
+  font-size: 14px;
+  font-family: arial;
+  bottom:35px;
+  right:15px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  border-radius:4px;
+ }
+ .notification-num{
+  position: absolute;
+  background-color: rgb(200, 0, 0);
+  color:white;
+  border-radius: 20px;
+  top:-4px;
+  right:12px;
+  padding-left: 6px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+ }
+  
+.tooltibs{
+  position:absolute;
+  background-color: rgb(191, 191, 191);
+  border-radius:2px;
+  bottom:-30px;
+  color:white;
+  font-size: 16px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  opacity: 0;
+  transition: opacity 0.15s ;
+  pointer-events: none;
+}
+.search-button:hover .tooltibs {
+  opacity: 1 ;
+  
+ 
+}
+
+</style>
+
+  </head>
+  <body style="padding-bottom:1000px; padding-top:85px; padding-left:90px; padding-right: 40px;">
+    <header class="header">
+      <div class="left-side" > 
+       <img class="icon-one" src="icons/hamburger-menu.svg">
+       <img style="height:20px;" src="icons/youtube-logo.svg">
+      </div>
+      <div class="center-one" >
+        <input  class="box" type="text" placeholder="search">
+        <div><button class="search-button" ><img class="search-box" src="icons/search.svg"><div s   class="tooltibs">search</div></button></div>
+        <button class="mic-button" ><img  class="mic-img" src="icons/voice-search-icon.svg" ></button>
+      </div>
+      <div style="width:220px; display:flex; align-items: center; flex-shrink: 0; ">
+         <img class="upload" src="icons/upload.svg">
+         <img class="apps" src="icons/youtube-apps.svg">
+         <div style="position:relative;">
+          <img class="notification" src="icons/notifications.svg">
+          <div class="notification-num">3</div>
+        </div>
+         <img class="dragon" src="thumbnails/e4eb4e4c-0e37-46d8-942d-34190110d384.jpeg">
+      </header>
+    </div>
+    <nav class="side-bar">
+     <div style="margin-bottom: 35px; margin-top: 25px;"><img style="height:28px; margin-left: 14px;" src="icons/home.svg"><p class="bot">home</p></div> 
+     <div style="margin-bottom: 35px;"><img style="height:28px; margin-left: 14px;" src="icons/explore.svg"><p class="bot">explore</p></div>
+     <div style="margin-bottom: 35px;"><img style="height:28px; margin-left: 14px;" src="icons/subscriptions.svg"><p class="bot">subscription</p></div> 
+     <div style="margin-bottom: 35px;"><img style="height:28px; margin-left: 14px;" src="icons/originals.svg"><p class="bot">originals</p></div>
+     <div style="margin-bottom: 35px;"><img style="height:28px; margin-left: 14px;" src="icons/youtube-music.svg"><p class="bot">youtube music</p></div>
+     <div style="margin-bottom: 35px;"><img style="height:28px; margin-left: 14px;" src="icons/library.svg"><p class="bot"> library</p></div>
+      
+    </nav>
+
+
+<main>
+
+  <div class="whole">
+<div class="top">
+
+
+
+<div style="width:300px; margin-bottom: 8px; position:relative;">
+  <img style=" width: 300px;"  src="thumbnails/thumbnailone.webp">
+  <div class="first">14:20</div>
+</div>
+
+  
+  <div class="bottom">
+
+
+<div >
+  <img style="border-radius:55px; height:49px;" src="channelpic/channel-1.jpeg">
+</div> 
+    <div class="text">
+
+      <p style="font-weight:bold; font-family:arial; margin-top:0px;"> 
+        Talking Tech and AI with Google CEO Sundar Pichai!
+      </p>
+      <p style="margin-bottom:8px;">
+         Marques Brownlee
+      </p>
+      <p style="margin-top: 0px;">
+        3.4M views · 6 months ago
+      </p>
+    </div>
+      
+    
+  </div>
+</div>
+
+<div  >
+
+  <div style=" width:300px; position:relative; ">
+  <img style= "width:300px; margin-bottom: 8px; " src="thumbnails/thumbnailtwo.webp">
+  <div class="first-2"> 8:22</div>
+  </div>
+
+
+
+<div class="bottomtwo">
+
+  <div >
+    <img style="border-radius:55px; width:50px;  " src="channelpic/channel-2.jpeg">
+  </div>
+   <div class="texttwo">
+    <p style="font-weight:bold; font-family: arial; margin-top: 0px; ">
+
+      Try Not To Laugh Challenge #9
+    </p>
+    <p class="name">
+  Markiplier
+                  
+    </p>
+    <p class="status">
+     19M views &#8901; 4 years ago
+                
+    </p>
+   </div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="three"> 
+
+
+<div  style="  width:300px; position:relative; ">
+
+<img style="width:300px; margin-bottom: 10px; "  src="thumbnails/thumbnailthree.webp">
+<div class="first-3"> 9:13</div>
+
+</div>
+
+
+
+                  
+
+<div class="bottomthree"> 
+
+<div>
+  <img style="border-radius: 90px; width: 50px; " src="channelpic/channel-3.jpeg">
+</div>
+<div>
+  <p style="font-weight: bold; font-size: 15px; font-family: arial; width: 230px; margin-top:0px;"> Crazy Tik Toks Taken Moments Before disaster </p>
+  <p style="margin-bottom:3px;"> SSSniperWolf </p>
+  <p style="margin-top:6px;"> 12M views · 1 year ago </p>
+</div>
+
+</div>
+
+
+
+
+
+
+</div> 
+ 
+
+
+
+
+
+
+
+
+<div style="display: grid;">
+<div style=" width: 300px;   position:relative;">
+  <img  style="width: 300px; margin-bottom: 8px;" src="thumbnails/thumbnailfour.webp">
+  <div class="first-5">22:09</div>
+</div>
+<div class="bottom-four">
+<div class="chennal">
+  <img  style="border-radius: 60px; width:50px; " src="channelpic/channel-4.jpeg">
+</div>
+<div>
+<p style="margin-top: 0px; font-weight: bold; font-family: arial;">The Simplest Math Problem No One Can Solve - Collatz</p>
+<p>Veritasium</p>
+<p>18M views · 4 months ago</p>
+</div>
+</div>
+</div>
+
+
+<div style="display:grid;">
+
+<div  style=" width: 300px; position:relative;" class="top-five">
+  <img  style="width: 300px;" src="thumbnails/thumbnailfive.webp">
+  <div class="first-5"> 11.17</div>
+</div>
+<div class="bottom"> 
+<div> 
+  <img style="border-radius: 50px; border-color: rgb(168, 10, 10); width:60px;" src="channelpic/channel-5.jpeg">
+</div>
+<div> 
+  <p style="margin-top: 0px; font-weight: bold; font-family: arial;">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+  <p>CS Dojo</p>
+  <p>519K views · 5 years ago</p>
+</div>
+</div>
+</div>
+
+
+
+<div  style="display:grid;" class="six"> 
+
+<div style=" width: 300px; position:relative;" class="top-six">
+  <img  style="width:300px; margin-bottom: 20px;" src="thumbnails/thumbnail-six.webp">
+  <div class="first-6"> 19.59 </div>
+</div>
+<div style="display:grid; grid-template-columns: 50px 290px; column-gap: 10px;" class="bottom-six"> 
+<div>
+<img style="width:50px; border-radius: 50px;" src="channelpic/channel-6.jpeg">
+</div>
+<div>
+  <p style="margin-top: 0px; font-weight: bold; font-family: arial;">Anything You Can Fit In The Circle I wll Pay For</p>
+  <p>MrBeast</p>
+  <p>439M subscribers </p>
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+
+</main>
+
+  </body>
+</html>
